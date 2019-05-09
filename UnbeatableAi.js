@@ -19,7 +19,7 @@ const cells = document.querySelectorAll('.cell');
 startGame();
 
 function startGame() {
-	document.querySelector(".endgame").style.display = "none";
+	document.querySelector(".endgame").style.display = "hidden";
 	origBoard = Array.from(Array(9).keys());
 	for (var i = 0; i < cells.length; i++) {
 		cells[i].innerText = '';
@@ -46,7 +46,7 @@ function turn(squareId, player) {
 }
 
 function displayTieScore(num) {
-    document.getElementById('gameTie').innerHTML = num;
+    document.getElementById('tieScore').innerHTML = num;
 }
 
 function displayHumScore(num) {
@@ -89,7 +89,7 @@ function gameOver(gameWon) {
 }
 
 function declareWinner(who) {
-	document.querySelector(".endgame").style.display = "block";
+	document.querySelector(".endgame").style.display = "hidden";
     document.querySelector(".endgame .text").innerText = who;
 }
 
@@ -104,7 +104,7 @@ function bestSpot() {
 function checkTie() {
 	if (emptySquares().length == 0) {
 		for (var i = 0; i < cells.length; i++) {
-			cells[i].style.backgroundColor = "green";
+			cells[i].style.backgroundColor = "gray";
 			cells[i].removeEventListener('click', turnClick, false);
 		}
         declareWinner("Tie Game!");
