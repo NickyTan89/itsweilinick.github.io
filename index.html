@@ -5,52 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
     <link rel="stylesheet" href="TicTacToe.css">
 </head>
 <body>
     <h1 class="gametitle">Tic Tac Toe</h1>
-    <table>
-        <tr>
-            <td class="cell" id="0"></td>
-            <td class="cell" id="1"></td>
-            <td class="cell" id="2"></td>
-        </tr>
-        <tr>
-            <td class="cell" id="3"></td>
-            <td class="cell" id="4"></td>
-            <td class="cell" id="5"></td>
-        </tr>
-        <tr>
-            <td class="cell" id="6"></td>
-            <td class="cell" id="7"></td>
-            <td class="cell" id="8"></td>
-        </tr>
-    </table>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+    </div>
     
-    <div class="information">
+    <div class="info-container">
         <div class="endgame">
             <div class="text"></div>
-            <div class="buttoncontainer">
-                <button btn="btn-lg" onClick="startGame()">New Game</button>
-            </div>
         </div>
+        <button onClick="startGame()">Try Again</button>
         <div class="score">
-            <h4>Player:<span id="humScore"></span></h4> <h4>Draw:<span id="gameTie"></span></h4> <h4>Computer:<span id="aiScore"></span></h4></p>
+            <h4>Player:<span id="humScore"></span></h4> <h4>Draw:<span id="tieScore"></span></h4> <h4>Computer:<span id="aiScore"></span></h4></p>
         </div>
     </div>
 <script src="./UnbeatableAi.js"></script>
 </body>
 </html>
-
-
-<!-- <section class="board-container flex-container flex-column flex-center">
-<div class="board flex-container">
-    <div id="one" class="cell flex-container flex-center"></div>
-    <div id="two" class="cell flex-container flex-center"></div>
-    <div id="three" class="cell flex-container flex-center"></div>
-    <div id="four" class="cell flex-container flex-center"></div>
-    <div id="five" class="cell flex-container flex-center"></div>
-    <div id="six" class="cell flex-container flex-center"></div>
-    <div id="seven" class="cell flex-container flex-center"></div>
-    <div id="eight" class="cell flex-container flex-center"></div>
-    <div id="nine" class="cell flex-container flex-center"></div> -->
