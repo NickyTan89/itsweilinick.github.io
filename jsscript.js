@@ -49,6 +49,14 @@ function displayTieScore(num) {
     document.getElementById('gameTie').innerHTML = num;
 }
 
+function displayHumScore(num) {
+    document.getElementById('humScore').innerHTML = num;
+}
+
+function displayAiScore(num) {
+    document.getElementById('aiScore').innerHTML = num;
+}
+
 function checkWin(board, player) {
 	let plays = board.reduce((a, e, i) =>
 		(e === player) ? a.concat(i) : a, []);
