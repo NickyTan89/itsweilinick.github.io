@@ -27,6 +27,8 @@ function startGame() {
 		cells[i].addEventListener('click', turnClick, false);
     }
     displayTieScore(tieScore)
+    displayHumScore(humScore)
+    displayAiScore(aiScore)
 }
 
 function turnClick(square) {
@@ -63,12 +65,19 @@ function checkWin(board, player) {
 function gameOver(gameWon) {
 	for (let index of winCombos[gameWon.index]) {
 		document.getElementById(index).style.backgroundColor =
-			gameWon.player == huPlayer ? "blue" : "red";
+            gameWon.player == huPlayer ? "blue" : "red";
 	}
 	for (var i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false);
 	}
-	declareWinner(gameWon.player == huPlayer ? "You win!" : "You lose.");
+    declareWinner(gameWon.player == huPlayer ? "You win!" : "You lose.");
+    if (gameWon.player == huPlayer) {
+        humScore = humScore +1;
+        displayHumScore(humScore);
+    } else {
+        aiScore = aiScore +1;
+        displayAiScore(aiScore);
+    }
 }
 
 function declareWinner(who) {
