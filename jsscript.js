@@ -73,7 +73,7 @@ function checkWin(board, player) {
 function gameOver(gameWon) {
 	for (let index of winCombos[gameWon.index]) {
 		document.getElementById(index).style.backgroundColor =
-			gameWon.player == huPlayer ? "blue" : "red";
+            gameWon.player == huPlayer ? "blue" : "red";
 	}
 	for (var i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false);
@@ -90,7 +90,7 @@ function gameOver(gameWon) {
 
 function declareWinner(who) {
 	document.querySelector(".endgame").style.display = "block";
-	document.querySelector(".endgame .text").innerText = who;
+    document.querySelector(".endgame .text").innerText = who;
 }
 
 function emptySquares() {
