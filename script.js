@@ -107,7 +107,7 @@ function checkTie() {
 			cells[i].style.backgroundColor = "gray";
 			cells[i].removeEventListener('click', turnClick, false);
 		}
-        declareWinner("Tie Game!");
+        declareWinner("Tie!");
         tieScore = tieScore+1;
         displayTieScore(tieScore);
         document.getElementById('gameTie');
