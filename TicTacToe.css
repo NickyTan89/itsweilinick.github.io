@@ -1,0 +1,198 @@
+.gametitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    margin-top: 0;
+}
+
+td {
+    border: 3px solid black;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: cursive;
+    font-size: 90px;
+    cursor: pointer;
+}
+
+table {
+    background-color: azure;
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -235px;
+    top: 100px;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+
+.information {
+    position: flex;
+}
+.buttoncontainer {
+    margin-top: -30px;
+}
+.endgame {
+    display: none;
+    width: 300px;
+    height: 35px;
+    border: rgba(0, 0, 0, 0.63) solid 3px;
+    border-radius: 10%;
+    background-color: rgba(60, 63, 66, 0.877);
+    position: absolute;
+    left: 45%;
+    top: 28%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.score {
+    display: flex;
+    margin-top: 500px;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+.score h4 {
+    margin-top: 15px;
+    margin-block-end: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #one {
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#two {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#three {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#four {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#five {
+    border: 3px solid black;
+}
+
+#six {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#seven {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#eight {
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#nine {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+} */
+
+/* To align all the sections */
+/* .flex-container {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+} */
+/* add into the class */
+
+/* Board container code start here */
+/* .board-container {
+    height: 100%;
+    width: 100%;
+}
+
+.board {
+    background-color: azure;
+    width: 462px;
+    flex-wrap: wrap;
+}
+
+.cell {
+    height: 150px;
+    width: 150px;
+    font-size: 60px;
+} */
+/* Board container code ends here */
